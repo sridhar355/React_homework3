@@ -1,42 +1,107 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav h1{
+  color: rgb(144, 7, 44);
+  margin-bottom: 1rem;
+}
+.nav h5{
+  font-weight: lighter;
+  margin-bottom: 1.5rem;
+}
+.nav .menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(95, 89, 89);
+  padding: 1rem;
+  color: white;
+  font-weight: bolder;
+}
+.nav .menu p:hover{
+  color: rgb(164, 18, 18);
+}
+.hero{
+  height: 700px;
+    width: auto; 
+    overflow: hidden;
+    position: relative;
+    padding: 4rem;
+    background-color: antiquewhite;
+}
+.hero img{
+  height: 140%;
+    width: 100%; 
+    display: block; 
+}
+
+.section1{
+  background-color: rgb(144, 7, 44);
   text-align: center;
+  padding: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  margin: 2rem;
+}
+.section1 h1{
+  margin-bottom: 2rem;
+}
+.section1 p{
+  width: 50%;
+  margin-left: 20rem;
+  margin-bottom: 2rem;
+}
+.section1 .section1-btn{
+  display: flex; /* Use flexbox for alignment */
+    gap: 10px;
+    margin-left: 25rem;
+}
+.section1 .section1-btn button{
+  padding: 1rem;
+  border: 2px solid #fff;
+  background-color: rgb(144, 7, 44);
+  color: #fff;
+}
+.section1 .section1-btn button:hover{
+  color: rgb(144, 7, 44);
+  background-color: #fff;
+}
+.section2{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2rem;
+  /* gap: 10px; */
+}
+.section2 .para{
+  margin-bottom: 1rem;
+  color: rgb(144, 7, 44);
+  font-size: medium;
+}
+.footer{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: antiquewhite;
+  /* padding: 2rem; */
+  padding-bottom: 1rem;
+}
+.footer h2{
+  color: rgb(144, 7, 44);
+  padding: 2rem;
+  /* margin-bottom: 1rem; */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.footer .phn{
+  margin-bottom: 1rem;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.footer .copyright{
+  background-color: rgb(95, 89, 89);
+  width: 100%;
+  padding: 1rem;
+  font-weight: lighter;
+  font-size: larger;
+  margin-bottom: 1rem;
 }
